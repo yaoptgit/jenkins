@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suites>
+	<suite name="test-pm-退货">
+		<!-- 登录 -->
+		<test name="Login">
+			<classes>
+				<class name="com.gomro.cases.LoginCase" />
+			</classes>
+		</test>
+
+		<!-- 创建需求 -->
+		<test name="CreateDemandCase">
+			<classes>
+				<class name="com.gomro.cases.CreateDemandCase"></class>
+			</classes>
+		</test>
+
+		<!-- 需求转询价并保存提交 -->
+		<test name="DemandInquiryCase">
+			<classes>
+				<class name="com.gomro.cases.DemandInquiryCase"></class>
+			</classes>
+		</test>
+
+		<!-- 参与询价并报价 -->
+		<test name="ParticipateInAQuoteCase">
+			<classes>
+				<class name="com.gomro.cases.ParticipateInAQuoteCase"></class>
+			</classes>
+		</test>
+
+		<!-- 核价定标 -->
+		<test name="PriceCalibrationCase">
+			<classes>
+				<class name="com.gomro.cases.PriceCalibrationCase"></class>
+			</classes>
+		</test>
+
+		<!-- 创建订单 -->
+		<test name="CreateOrderCase">
+			<classes>
+				<class name="com.gomro.cases.CreateOrderCase"></class>
+			</classes>
+		</test>
+
+		<!-- 供应商发货 -->
+		<test name="SupplierShipmentCase">
+			<classes>
+				<class name="com.gomro.cases.SupplierShipmentCase"></class>
+			</classes>
+		</test>
+
+		<!-- 客户收货 -->
+		<test name="UserReceiptCase">
+			<classes>
+				<class name="com.gomro.cases.UserReceiptCase"></class>
+			</classes>
+		</test>
+
+		<!-- 客戶退款 -->
+		<test name="ReturnsCase">
+			<classes>
+				<class name="com.gomro.cases.ReturnsCase"></class>
+			</classes>
+		</test>
+
+		<!-- 平台审批退货 -->
+		<test name="PlatformApprovesReturnsCase">
+			<classes>
+				<class name="com.gomro.cases.PlatformApprovesReturnsCase"></class>
+			</classes>
+		</test>
+		
+		<!-- 供应商审批退款 -->
+		<test name="VendorApprovalRefundCase">
+			<classes>
+				<class name="com.gomro.cases.VendorApprovalRefundCase"></class>
+			</classes>
+		</test>
+		
+		<!-- 客户退货 -->
+		<test name="CustomerReturnsCase">
+			<classes>
+				<class name="com.gomro.cases.CustomerReturnsCase"></class>
+			</classes>
+		</test>
+		
+		<!-- 供应商收货 -->
+		<test name="SupplierReceiptCase">
+			<classes>
+				<class name="com.gomro.cases.SupplierReceiptCase"></class>
+			</classes>
+		</test>
+
+		<listeners>
+			<listener
+				class-name="com.gomro.listener.AllureReportListener" />
+		</listeners>
+
+		<!-- 浏览器选择 -->
+		<!-- 谷歌 -->
+		<parameter name="driverType" value="chrome"></parameter>
+		<!-- 火狐 -->
+		<!-- <parameter name ="diverType" value="firefox"></parameter> -->
+		<!-- IE -->
+		<!-- <parameter name="diverType" value="IE"></parameter> -->
+
+		<parameter name="seleniumVersion" value="3.X"></parameter>
+	</suite>
+</suites>
+
