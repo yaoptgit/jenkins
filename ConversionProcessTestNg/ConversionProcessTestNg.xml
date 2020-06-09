@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suites>
+	<suite name="test-pm-转采">
+		<!-- 登录 -->
+		<test name="Login">
+			<classes>
+				<class name="com.gomro.cases.LoginCase" />
+			</classes>
+		</test>
+
+		<!-- 创建需求 -->
+		<test name="CreateDemandCase">
+			<classes>
+				<class name="com.gomro.cases.CreateDemandCase"></class>
+			</classes>
+		</test>
+
+		<!-- 需求转询价并保存提交 -->
+		<test name="DemandInquiryCase">
+			<classes>
+				<class name="com.gomro.cases.DemandInquiryCase"></class>
+			</classes>
+		</test>
+
+		<!-- 虚拟供应商参与询价并报价 -->
+		<test name="VirtualSupplierParticipationQuotationCase">
+			<classes>
+				<class
+					name="com.gomro.cases.VirtualSupplierParticipationQuotationCase"></class>
+			</classes>
+		</test>
+
+		<!-- 核价定标 -->
+		<test name="PriceCalibrationCase">
+			<classes>
+				<class name="com.gomro.cases.PriceCalibrationCase"></class>
+			</classes>
+		</test>
+
+		<!-- 创建订单 -->
+		<test name="CreateOrderCase">
+			<classes>
+				<class name="com.gomro.cases.CreateOrderCase"></class>
+			</classes>
+		</test>
+
+		<!-- 虚拟供应商接单 -->
+		<test name="VirtualSupplierOrdersCase">
+			<classes>
+				<class name="com.gomro.cases.VirtualSupplierOrdersCase"></class>
+			</classes>
+		</test>
+
+		<!-- 从虚拟供应商切换为平台账号 -->
+		<test name="SwitchPlatformAccountCase">
+			<classes>
+				<class name="com.gomro.cases.SwitchPlatformAccountCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采选择采购员 -->
+		<test name="ChooseBuyerCase">
+			<classes>
+				<class name="com.gomro.cases.ChooseBuyerCase"></class>
+			</classes>
+		</test>
+
+		<!-- 创建转采订单 -->
+		<test name="CreateTransferOrderCase">
+			<classes>
+				<class name="com.gomro.cases.CreateTransferOrderCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采订单审核 -->
+		<test name="TransferOrderReviewCase">
+			<classes>
+				<class name="com.gomro.cases.TransferOrderReviewCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采申请付款 -->
+		<test name="TransferPaymentCase">
+			<classes>
+				<class name="com.gomro.cases.TransferPaymentCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采付款审核 -->
+		<test name="ConversionPaymentReviewCase">
+			<classes>
+				<class name="com.gomro.cases.ConversionPaymentReviewCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采财务确认付款 -->
+		<test name="TransferFinancialConfirmationPaymentCase">
+			<classes>
+				<class
+					name="com.gomro.cases.TransferFinancialConfirmationPaymentCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采申请收票 -->
+		<test name="InvoiceForTransferApplicationCase">
+			<classes>
+				<class
+					name="com.gomro.cases.InvoiceForTransferApplicationCase"></class>
+			</classes>
+		</test>
+
+		<!-- 转采财务收票 -->
+		<test name="ConvertingFinancialCollectionCase">
+			<classes>
+				<class
+					name="com.gomro.cases.ConvertingFinancialCollectionCase"></class>
+			</classes>
+		</test>
+
+		<listeners>
+			<listener
+				class-name="com.gomro.listener.AllureReportListener" />
+		</listeners>
+
+		<!-- 浏览器选择 -->
+		<!-- 谷歌 -->
+		<parameter name="driverType" value="chrome"></parameter>
+		<!-- 火狐 -->
+		<!-- <parameter name ="diverType" value="firefox"></parameter> -->
+		<!-- IE -->
+		<!-- <parameter name="diverType" value="IE"></parameter> -->
+
+		<parameter name="seleniumVersion" value="3.X"></parameter>
+	</suite>
+</suites>
+
